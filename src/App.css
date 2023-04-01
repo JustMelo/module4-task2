@@ -1,38 +1,75 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.material-icons {
+  display:contents;
+  max-width: 20px;
+  border-color: rgb(255, 255, 255);
+  color: rgb(14, 14, 14);
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.result-tablet {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 15%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.result-line {
+  display: grid;
+  margin-right: 3%;
+  padding-top: 5px;
+  grid-template-columns: repeat(auto-fit, 30%);
+}
+
+.input-fields {
+  display:flex;
+}
+
+.tablet-wrap {
+  margin-top: 10px;
+  border: 2px solid #000000;
+  border-radius: 20px;
+}
+
+.workout {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.input-element {
+  margin-left: 10px;
+  width: 250px;
+  height: 25px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+.input-button {
+  align-self:flex-end;
+  width: 50px;
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+.input-fields {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin-top: 10px;
+  border: none;
 }
