@@ -29,8 +29,8 @@ export default function InputForm () {
         elem.date === userData.date? 
           [...res, { ...elem, distance: (Number(elem.distance) + Number(userData.distance)).toFixed(1) } ] : 
           [...res, elem], [])
-      ]
-      }))
+      ]})
+      )
       setUserData((prevState) => ({ ...prevState, date: '', distance: ''}))
       return
     }
@@ -55,13 +55,13 @@ export default function InputForm () {
     const firstElem = dayjs(firstDate.date);
     const secondElem = dayjs(secondDate.date);
     const diffDays = firstElem.diff(secondElem, 'day');
+
     if (diffDays > 0) {
       return -1;
     }
     return 1;
   }; 
   
-
   const disableSubmitButton = (elem) => {
     elem.disabled = true;
     setTimeout(() => {
